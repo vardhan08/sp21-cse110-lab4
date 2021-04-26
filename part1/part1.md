@@ -1,19 +1,22 @@
 ## Part 1a
 1. values added: 20
-2. final result: undefined
+2. final result: 20
 3. values added: 20
 4. Error 
    !--- variable result is visible inside the if block only. ---!
 5. Error 
    !--- (re)assignment to a const variable is not allowed. 
 6. Error 
-   !--- variable result is visible inside the if block only. ---!
+   !--- This line will not run because of error at line 9. But if we fix the error at line 9, we will again get an error. Variable result is visible inside the if block only. ---!
 
 
 ## Part 1b
 1. 3
+   This is a console log statement after the end of the loop. At this point, the loop variable will be equal to the length of the list because that is when the loop condition will fail.
 2. 150
+   It will print the value stored in the "discountedPrice" calculated in the last round fo the loop.
 3. 150
+   It will print the value stored in the "finalPrice" calculated in the last round fo the loop.
 4. [50, 100, 150] 
    The code snippet takes price values from the list "prices", calculates "discount" (in this case 0.5), rounds it off, and pushes to the list "discounted". Since, the list "prices" has the price values 100, 200, and 300, and the discount passed in was 0.5 (50%), first a discount of 50% was applied to each value ([50, 100, 150]), rounded off (nothing happened in this case because the discounted prices are already a whole number to the nearest tens), and this price was pushed to the list "discounted". Since, all variables are declared using "var" keyword, there is no problem regarding the loss os scope of variables.
 5. Error 
@@ -21,6 +24,7 @@
 6. Error 
    !--- variable "discountedPrice" declared using let keyword are accessible inside the for block only ---!
 7. 150
+   It will print the value stored in "finalPrice" that was calculated in the last round of the loop.
 8. [50, 100, 150] 
    We got the correct output because the vaiables "discounted" and "finalPrice" are declared with "let" keyword and have a scope to the whole function block. 
 9.  Error 
@@ -46,7 +50,7 @@
         null gets typecasted  to string because 3 is a string. Hence, the string '3' is concatenated with 'null' to give the result '3null'.
     5. 4
         true gets typecasted to number 1 resulting in 3 + 1 = 4.
-    6. false + null
+    6. 0
         For addition, both false and null get typecasted to 0 (unless a string is involved).
     7. 3undefined
         undefined gets typecasted to string literal
